@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203030953" GingerVersion="4.1.0.0" Version="11" LastUpdateBy="beniwal" LastUpdate="202203031032" />
+<GingerRepositoryItem><Header ItemGuid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203030953" GingerVersion="4.1.0.0" Version="12" LastUpdateBy="beniwal" LastUpdate="202203031837" />
 <BusinessFlow Elapsed="1381" Guid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" Name="LOOPPractice" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="7286e32f-a4c8-457a-a755-deb1d78fafac" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -17,9 +17,6 @@
 <ActInputValue Guid="f87246ce-ecf4-41cb-962b-bf4e89107f57" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID = {Var Name=BF_ROW_NUM}" />
 <ActInputValue Guid="2e22e450-8677-4ed0-b7c7-bbf9932bc50f" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
 </InputValues>
-
-<ReturnValues>
-</ReturnValues>
 </ActExcel>
 <ActSetVariableValue Active="True" Description="Set Variable Action" Guid="d491937d-b8cd-40ea-bcb0-9ae189b34fef" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BF_ROW_NUM" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
@@ -43,7 +40,7 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="bf1e1896-5451-4dd8-afca-fa50b65a9227" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="7286e32f-a4c8-457a-a755-deb1d78fafac" ActivityName="Activity 1" Guid="9b7bb822-846d-4cd5-9940-5cd493d88ff0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="7286e32f-a4c8-457a-a755-deb1d78fafac" ActivityName="Activity 1" Guid="84d8c915-f03e-41f0-999d-f30e3cfff103" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
