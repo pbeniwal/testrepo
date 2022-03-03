@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="8a86534f-2818-471e-a42c-15a328a00087" ItemType="GlobalAppModelParameter" CreatedBy="beniwal" Created="202203031650" GingerVersion="4.1.0.0" Version="2" LastUpdateBy="beniwal" LastUpdate="202203031651" />
+<GlobalAppModelParameter CurrentValue="ABC" Guid="8a86534f-2818-471e-a42c-15a328a00087" ParentGuid="00000000-0000-0000-0000-000000000000" PlaceHolder="{MY_GBL}">
+<OptionalValuesList>
+<OptionalValue Guid="f24531f6-c7b6-4018-9841-c46b1c70f217" IsDefault="True" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Current Value}" />
+</OptionalValuesList>
+</GlobalAppModelParameter></GingerRepositoryItem>

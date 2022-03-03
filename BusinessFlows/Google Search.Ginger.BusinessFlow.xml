@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020855" GingerVersion="4.1.0.0" Version="64" LastUpdateBy="beniwal" LastUpdate="202203031630" />
+<GingerRepositoryItem><Header ItemGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020855" GingerVersion="4.1.0.0" Version="66" LastUpdateBy="beniwal" LastUpdate="202203031819" />
 <BusinessFlow Elapsed="22067" Guid="c3a623c7-72ee-4619-9819-1c2298465d5e" Name="Google Search" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Open Google" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -51,12 +51,12 @@
 <Acts>
 <ActUIElement Active="True" Description="Type Search pattern" EnableRetryMechanism="True" Guid="d3f77444-4382-4483-8660-a521a9ae88e3" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="DesktopScreen">
 <InputValues>
-<ActInputValue Guid="277ec80d-2136-4b97-baa1-1f381483002b" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="277ec80d-2136-4b97-baa1-1f381483002b" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
 <ActInputValue Guid="77383fd7-09e0-44a8-8219-6ae4392b327d" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
-<ActInputValue Guid="0e7327ce-3d93-4e00-be2c-9fdb6c9f3a5b" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="0e7327ce-3d93-4e00-be2c-9fdb6c9f3a5b" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
 <ActInputValue Guid="278e8707-23d8-418d-b414-23bc6eada773" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <ActInputValue Guid="30a17eee-ce0e-44f6-ac40-4cba4eb10463" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
-<ActInputValue Guid="a82dec02-03c2-4f48-ae2c-0b7170b1484c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=GLB_GOOGLE_SERACH_XPATH}" />
+<ActInputValue Guid="a82dec02-03c2-4f48-ae2c-0b7170b1484c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="16657623-2eb1-443d-9ac8-ed74704d5525_66322318-ae50-42d2-9b3b-0bfa70e3a24a" />
 <ActInputValue Guid="ba57d59a-132c-4528-b9bf-0b3fef4868df" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
 <ActInputValue Guid="cce0d024-9fac-45d9-a4d6-817540b275f3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ginger automated search" />
 <ActInputValue Guid="2b271182-e4c7-4889-9691-429366c4a20a" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
@@ -64,6 +64,27 @@
 <ActInputValue Guid="4872477d-da5c-4948-9b42-1467c27755e5" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
 <ActInputValue Guid="ebc2deec-d335-4536-943b-657b9b25e8af" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
 <ActInputValue Guid="3c03556a-3eef-4762-a630-cf0c92ced886" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="UIElement Action" Guid="fb050135-dcf0-428f-a9df-cda1232e6cf8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="56ca77dd-a057-43e1-8671-f70acfff17b8" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="0b8087f9-47fb-48f2-8ed6-ddeb8aae8727" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="e0a5b086-3e50-4900-9521-596898d4f618" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="fe9e94e7-bf1d-4eab-93a5-e7ad3d141d35" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="ef275ad7-5efa-4772-83f5-b9d4729381e7" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="4c53a97e-996f-4962-9c0c-e9fb29fa323e" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{DS Name=DefaultDataSource DST=MyKeyValueDataTable MASD=N Query QUERY=db.MyKeyValueDataTable.select GINGER_KEY_VALUE where GINGER_KEY_NAME=&quot;GOOGLE_INPUT&quot;}" />
+<ActInputValue Guid="e55f875c-85a6-48c7-9860-b6319c9deb0c" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="67543862-ab01-40e4-b0a9-3a1f81a20cd2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="433f4f56-cd3d-4e1c-b6cc-665c1afdf3f8" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="21e1f07e-0c45-4717-8551-7ad9299a75c9" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="65e7182b-1535-44e4-b082-664aa63e3977" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="UIElement Action" Guid="5bf5d55d-992a-48a9-8ff5-f5a275be392e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3bf27e3e-6435-4c65-a861-3d43480b4237" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="334edd00-3377-4a9c-9bac-283d4535a18e" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
 </InputValues>
 </ActUIElement>
 <ActUIElement Active="True" Description="Click Search Button" EnableRetryMechanism="True" Guid="d9f9ad8f-1504-47cb-8ba9-5df91e79b220" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="5" WindowsToCapture="OnlyActiveWindow">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="89a9ed4e-0c1c-49dd-a5e3-be167992b6b7" ItemType="Solution" CreatedBy="beniwal" Created="202203020850" GingerVersion="4.1.0.0" Version="13" LastUpdateBy="beniwal" LastUpdate="202203030949" />
+<GingerRepositoryItem><Header ItemGuid="89a9ed4e-0c1c-49dd-a5e3-be167992b6b7" ItemType="Solution" CreatedBy="beniwal" Created="202203020850" GingerVersion="4.1.0.0" Version="14" LastUpdateBy="beniwal" LastUpdate="202203031819" />
 <Solution EncryptedValidationString="NQPBnAW2jjPeZjGd6XibIg==" Guid="89a9ed4e-0c1c-49dd-a5e3-be167992b6b7" Name="Test" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ApplicationPlatforms>
 <ApplicationPlatform AppName="MyWebApp" Description="Web Application" Guid="7b47905b-07b0-4ff5-acce-4036c19b1a3f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
@@ -51,6 +51,6 @@
 </SolutionCategories>
 
 <Variables>
-<VariableString Guid="dfc2e24f-f876-444f-8ede-e6edf5340467" InitialStringValue="187" MappedOutputType="None" Name="GLB_GOOGLE_SERACH_XPATH" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="dfc2e24f-f876-444f-8ede-e6edf5340467" InitialStringValue="//" MappedOutputType="None" Name="GLB_GOOGLE_SERACH_XPATH" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
 </Variables>
 </Solution></GingerRepositoryItem>
