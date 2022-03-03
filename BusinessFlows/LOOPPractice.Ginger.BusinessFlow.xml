@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203030953" GingerVersion="4.1.0.0" Version="11" LastUpdateBy="beniwal" LastUpdate="202203031032" />
+<BusinessFlow Elapsed="1381" Guid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" Name="LOOPPractice" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="7286e32f-a4c8-457a-a755-deb1d78fafac" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="4b52c96d-2576-4cab-bdd2-7341e25df1ba" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BF_ROW_NUM" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2a88ccec-52fa-4f51-8cf7-7e4fcae60a91" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1" />
+</InputValues>
+</ActSetVariableValue>
+<ActExcel Active="True" Description="Excel Action" ExcelActionType="ReadData" Guid="83032dd4-c033-4fea-bf1f-900d89c7f590" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f700adb6-6432-4bd4-b091-88556ee702b3" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="bf84d6f0-132d-4b6b-8514-5a7a4aee7b18" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\Documents\Input_Data.xlsx" />
+<ActInputValue Guid="6c3fc3c3-ce97-404f-88a1-3ea6c3af629e" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Data" />
+<ActInputValue Guid="f87246ce-ecf4-41cb-962b-bf4e89107f57" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID = {Var Name=BF_ROW_NUM}" />
+<ActInputValue Guid="2e22e450-8677-4ed0-b7c7-bbf9932bc50f" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActExcel>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="d491937d-b8cd-40ea-bcb0-9ae189b34fef" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BF_ROW_NUM" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="97a2e5f4-dc38-40a7-a774-60c51aaf135d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=BF_ROW_NUM}+1}" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="FlowControl" Guid="4a1e3ff8-bdf2-4ed8-a55a-dd55b846b25c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="{CS Exp={Var Name=BF_ROW_NUM}&lt;=3}" FlowControlAction="GoToAction" Guid="ff032754-61a1-46a0-91c6-739056fc7ec0" Operator="CSharp" ParentGuid="00000000-0000-0000-0000-000000000000" Value="83032dd4-c033-4fea-bf1f-900d89c7f590#GUID_NAME#Excel Action" />
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="{CS Exp={Var Name=BF_ROW_NUM}&gt;3}" FlowControlAction="StopBusinessFlow" Guid="a898ee03-2a8d-431e-b533-448e50b6b01c" Operator="CSharp" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="c653e8e3-aba2-4b20-b298-72ad58797af3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="bf1e1896-5451-4dd8-afca-fa50b65a9227" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="7286e32f-a4c8-457a-a755-deb1d78fafac" ActivityName="Activity 1" Guid="9b7bb822-846d-4cd5-9940-5cd493d88ff0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="b43e21f6-e8a7-4ff8-9176-8a7a4f3d10f7" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableNumber Guid="882cb2ab-a659-4dc8-8d0e-f6821ee45edf" InitialNumberValue="0" MappedOutputType="None" MaxValue="2147483647" MinValue="-2147483648" Name="BF_ROW_NUM" ParentGuid="e9bd9b9d-8ab0-4729-a910-f40799f075ef" ParentName="LOOPPractice" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>

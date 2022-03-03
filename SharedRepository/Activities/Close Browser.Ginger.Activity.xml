@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ItemType="Activity" CreatedBy="beniwal" Created="202203030459" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="beniwal" LastUpdate="202203030459" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Close Browser" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="8a94bc21-1beb-40ae-9ff7-8a879db616de" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="95cf257d-3315-45a3-b28d-67141f605238" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CloseAll" />
+<ActInputValue Guid="945c7088-561a-4d9a-a148-9571267bbb96" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fe181030-4678-4a53-8334-7448141c4af9" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c78d32f3-e695-4f64-af9b-85add6f22fb2" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="76d23281-3e3d-47e1-9807-402b9f991796" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="ee159027-e18c-420a-bd04-d0a809f9c662" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="80b0379c-6a74-40da-a65c-194255ebaf54" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+</Acts>
+</Activity></GingerRepositoryItem>

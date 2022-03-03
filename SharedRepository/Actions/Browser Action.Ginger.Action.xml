@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="6389ea40-8f35-4475-be61-45591f06ba66" ItemType="ActBrowserElement" CreatedBy="beniwal" Created="202203030455" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="beniwal" LastUpdate="202203030455" />
+<ActBrowserElement Active="True" Description="Browser Action" Guid="6389ea40-8f35-4475-be61-45591f06ba66" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0927815e-bdd9-418e-bd70-6f09b2819776" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="4981c5f4-252b-4648-86bc-286b2889aa3b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{EnvParam App=MyWebApp Param=URL}" />
+<ActInputValue Guid="69e02151-4e70-47b7-81dd-2ffd866af0a7" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8256871b-64ae-4bd5-89be-7bc0e34fb089" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="0946cde8-80db-4ec1-9a69-52cb46bb1055" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="948d2863-16c3-4aae-a446-77a046e9ae48" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="6b3e380a-4e37-42f6-9b45-a92cec6bea12" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement></GingerRepositoryItem>

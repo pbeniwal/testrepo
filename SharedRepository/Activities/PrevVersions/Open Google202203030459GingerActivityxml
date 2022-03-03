@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ItemType="Activity" CreatedBy="beniwal" Created="202203030452" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="beniwal" LastUpdate="202203030452" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Open Google" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="f28c947a-3f46-4501-85e2-a03f575dc61e" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f866cebf-e184-43b3-9645-e540c0108da0" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="d07ea158-cc9e-4cbb-a626-461435cdf917" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{EnvParam App=MyWebApp Param=URL}" />
+<ActInputValue Guid="5517dc30-4309-481b-a57e-407d002fb77e" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d39405c7-2264-4a72-baaa-5ccfc0337629" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="db81400f-8872-47bc-a548-e4b141e9ec22" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="2d9695c3-1eba-42de-9c2f-6485afc6fac2" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="6ad31781-08e2-4403-9393-e1ff7b4b3e4e" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="15c924ff-a158-4095-afe3-a69a8a09997c" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0a1b7d47-ebe1-4ee6-b588-22d088dc5203" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Maximize" />
+<ActInputValue Guid="3c731fd2-7a56-4227-89de-5d77f72cde55" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ffdde801-4985-4108-974e-1f4eb3e798df" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a6c3ac10-58b1-4d5f-85ae-b4b70d34bff3" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="d468528d-dc48-48a9-94b5-6419d7b7e158" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="541ac367-9392-42bd-bf03-6d37a1b5e48a" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="3494bb0b-3e7e-41ac-b2cf-e8150487ecf9" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+</Acts>
+
+<Variables>
+<VariableString Guid="e02faf27-aee8-4f79-9d42-40098a4a52ee" InitialStringValue="activaity demo var value" MappedOutputType="None" Name="ACT_OG_VAR1" ParentGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentName="Google Search\Group\Open Google" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

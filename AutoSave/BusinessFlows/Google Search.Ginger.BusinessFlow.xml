@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203031335" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="beniwal" LastUpdate="202203031335" />
+<BusinessFlow Elapsed="22067" Guid="c3a623c7-72ee-4619-9819-1c2298465d5e" Name="Google Search" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Open Google" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="f28c947a-3f46-4501-85e2-a03f575dc61e" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f866cebf-e184-43b3-9645-e540c0108da0" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="d07ea158-cc9e-4cbb-a626-461435cdf917" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="www.google.co.in" />
+<ActInputValue Guid="5517dc30-4309-481b-a57e-407d002fb77e" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d39405c7-2264-4a72-baaa-5ccfc0337629" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="db81400f-8872-47bc-a548-e4b141e9ec22" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="2d9695c3-1eba-42de-9c2f-6485afc6fac2" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="6ad31781-08e2-4403-9393-e1ff7b4b3e4e" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="15c924ff-a158-4095-afe3-a69a8a09997c" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0a1b7d47-ebe1-4ee6-b588-22d088dc5203" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SwitchFrame" />
+<ActInputValue Guid="3c731fd2-7a56-4227-89de-5d77f72cde55" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ffdde801-4985-4108-974e-1f4eb3e798df" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="//iframe[@role=&quot;presentation&quot;]" />
+<ActInputValue Guid="a6c3ac10-58b1-4d5f-85ae-b4b70d34bff3" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="d468528d-dc48-48a9-94b5-6419d7b7e158" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="541ac367-9392-42bd-bf03-6d37a1b5e48a" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="3494bb0b-3e7e-41ac-b2cf-e8150487ecf9" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="UIElement Action" Guid="e04cee5c-9844-4338-a463-389ffccbe85d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c080cb4d-378f-47e6-8b41-82927d9d2795" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="dab3e910-b7c2-4355-a75f-95cc8ca672db" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AsyncClick" />
+<ActInputValue Guid="6794dead-aded-44a0-9a45-eca417f8758d" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="fec11038-fcab-4ce4-b780-50c623fb418e" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="25e6e8d9-1315-45eb-a5ec-d274a45a8ae7" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="4a424c2e-3f31-4cec-8d3d-8fb724f9be4d" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="//button[text()=&quot;No thanks&quot;]" />
+<ActInputValue Guid="ab0226d6-25c2-47f6-baee-359f11fc6e2b" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="43f8871d-17ed-4c7e-af17-e33a5ce5b7a6" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b3b184fd-1bac-4a40-8687-1a5040c3eee4" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="834d6912-cbaf-4e2e-93df-a2b7a7976f1f" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="52406774-1b64-4659-9abe-875d45ab36e1" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+</Acts>
+
+<Variables>
+<VariableString Guid="e02faf27-aee8-4f79-9d42-40098a4a52ee" InitialStringValue="activaity demo var value" MappedOutputType="None" Name="ACT_OG_VAR1" ParentGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentName="Google Search\Group\Open Google" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Search Google" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="ba3bb138-e4d7-454e-a5b5-794a27f8b85e" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActUIElement Active="True" Description="Type Search pattern" EnableRetryMechanism="True" Guid="d3f77444-4382-4483-8660-a521a9ae88e3" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="DesktopScreen">
+<InputValues>
+<ActInputValue Guid="277ec80d-2136-4b97-baa1-1f381483002b" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="77383fd7-09e0-44a8-8219-6ae4392b327d" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="0e7327ce-3d93-4e00-be2c-9fdb6c9f3a5b" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="278e8707-23d8-418d-b414-23bc6eada773" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="30a17eee-ce0e-44f6-ac40-4cba4eb10463" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="a82dec02-03c2-4f48-ae2c-0b7170b1484c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=GLB_GOOGLE_SERACH_XPATH}" />
+<ActInputValue Guid="ba57d59a-132c-4528-b9bf-0b3fef4868df" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="cce0d024-9fac-45d9-a4d6-817540b275f3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ginger automated search" />
+<ActInputValue Guid="2b271182-e4c7-4889-9691-429366c4a20a" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a2563b76-ad48-4a22-800b-acc8397949b1" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4872477d-da5c-4948-9b42-1467c27755e5" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ebc2deec-d335-4536-943b-657b9b25e8af" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="3c03556a-3eef-4762-a630-cf0c92ced886" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click Search Button" EnableRetryMechanism="True" Guid="d9f9ad8f-1504-47cb-8ba9-5df91e79b220" MaxNumberOfRetries="3" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ba32afd1-873c-4cdd-b704-347aa5c5e754" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="188d829a-e60d-40e7-9d1e-a8e6acebaeda" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AsyncClick" />
+<ActInputValue Guid="eaaaee84-b849-4595-a717-8e5c05d1bc82" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByXPath" />
+<ActInputValue Guid="30bd9feb-c363-48c8-877b-424da4af25db" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="d9f8c676-6962-49fa-a7e5-2fe8d9dde1bf" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="aabdff69-9c58-48b7-b24f-db94770547f0" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="//input[@value='Google Search']" />
+<ActInputValue Guid="f6aa77e3-33be-4a9f-9580-cc0b649f5a9d" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c01ba3d2-64e9-45fc-9776-69f541012e84" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1c2b491d-55f5-4fe1-93dc-cadc79ec921c" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="898d02f0-42ff-4a28-89d8-5bb8d4ae255d" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7fa0eda6-ee47-469d-959c-40a089e5b447" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="405205b9-fb13-49d1-8479-fb70d99b30d1" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="96328e96-380b-4633-97ce-0a9997639cc7" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActScreenShot Active="True" Description="Screen Shot Action" Guid="4543787a-c799-4ac2-8607-2b6b5a5f6ac0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a21b6db8-4b19-4612-9c46-b917d9e47eb8" Param="SaveToFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="C:\USERS\BENIWAL\DESKTOP\SCREENSHOTS" />
+</InputValues>
+</ActScreenShot>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Close Browser" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="8a94bc21-1beb-40ae-9ff7-8a879db616de" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="95cf257d-3315-45a3-b28d-67141f605238" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CloseAll" />
+<ActInputValue Guid="945c7088-561a-4d9a-a148-9571267bbb96" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="fe181030-4678-4a53-8334-7448141c4af9" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c78d32f3-e695-4f64-af9b-85add6f22fb2" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="76d23281-3e3d-47e1-9807-402b9f991796" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="ee159027-e18c-420a-bd04-d0a809f9c662" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="80b0379c-6a74-40da-a65c-194255ebaf54" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="LinuxVa" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d14a0478-b00c-47bd-9675-16ae899085cd" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="Mediation">
+<Acts>
+<ActConsoleCommand Active="True" ConsoleCommand="FreeCommand" Description="Console Command Action" Guid="a87762ed-4db8-4c67-a047-5969f0c0aeaa" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Unix" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b39aa803-1a7d-4ff5-bb14-9d9eec951e07" Param="Free Command" ParentGuid="00000000-0000-0000-0000-000000000000" Value="echo a=`ls -lrt | wc -l " />
+</InputValues>
+</ActConsoleCommand>
+</Acts>
+
+<Variables>
+<VariableString Guid="ceef1b1b-1c98-45ec-a176-c32347416864" InitialStringValue="222" MappedOutputType="None" Name="expected_value" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="3dfc9ac4-0a45-4a72-b4f6-9647686030b2" MappedOutputType="None" Name="output_value" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="WriteData" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="b0a37b95-6c2d-4955-a72e-02995188a532" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActExcel Active="True" Description="Excel Action" ExcelActionType="ReadData" Guid="9af86de3-fdc1-4efc-a137-82ffecff9157" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5c023df8-e1f9-4b9d-9ded-99e152c4e879" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e2af3a04-ec0a-4488-8ca1-b57b0fa69bee" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\Documents\Input_Data.xlsx" />
+<ActInputValue Guid="bc4bff2d-be0c-497a-9079-f8de9562ead4" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Data" />
+<ActInputValue Guid="46ebab0c-9a74-41b9-ae9d-96c12ad31264" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID =1" />
+<ActInputValue Guid="546a70d4-d72f-4360-b5e9-0d0cc36b0833" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="29724cc8-9490-429f-bb95-4f5c106e96b0" Param="SetDataUsed" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActExcel>
+<ActExcel Active="True" Description="Excel Action_Copy" ExcelActionType="WriteData" Guid="bee594b1-416b-422b-b2e1-6ad51b64ab74" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d861abd0-5328-46cd-9bb9-d2775cdc3af1" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="PROCESSED=&quot;{Var Name=GLB_GOOGLE_SERACH_XPATH}&quot;" />
+<ActInputValue Guid="5941c8d4-6e3f-45ca-87c6-5681fcd64d1e" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\Documents\Input_Data.xlsx" />
+<ActInputValue Guid="0aee1579-6b8c-45e7-9ccb-4d11230aed0f" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Data" />
+<ActInputValue Guid="1996f071-f2e3-416f-9d49-e236b0ea8962" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID =1" />
+<ActInputValue Guid="26d8672e-45dc-494c-b183-625e86f00f8f" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="4b7e050b-5886-4429-be45-850a4128b102" Param="SetDataUsed" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActExcel>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="94cd9429-8f21-4467-9aa0-26774437e9fb" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ActivityName="Open Google" Guid="1d7c44c9-78bb-4f89-81d4-6fc43dfb1d46" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="ba3bb138-e4d7-454e-a5b5-794a27f8b85e" ActivityName="Search Google" Guid="e476ac5e-a692-4d9e-ab04-bdc1c26f6eca" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ActivityName="Close Browser" Guid="b82db8f4-e732-449c-be61-79eb2ec30366" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d14a0478-b00c-47bd-9675-16ae899085cd" ActivityName="LinuxVa" Guid="169cbd0f-b00b-4a28-92d4-0bfaeede4354" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="b0a37b95-6c2d-4955-a72e-02995188a532" ActivityName="WriteData" Guid="17ba6d44-30c4-484a-804b-534784dee5a7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="1278bcef-454b-42ec-99ed-3563f993076a" LastExecutingAgentName="Edge" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Mediation" Guid="0ab05f24-e178-49a0-b236-314373528f22" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="MyPowerBuilderApp" Guid="f4548575-9e88-4a52-ba7d-4e324d10d17b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="82d3efb8-7049-4db9-b9c7-fb7f642d0404" InitialStringValue="dummy value" MappedOutputType="None" Name="BF_VAR1" ParentGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ParentName="Google Search" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="fb5d7189-43c6-44f5-aa66-6cffccec22d5" InitialStringValue="empemail" MappedOutputType="None" Name="BF_EMP_EMAIL" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>

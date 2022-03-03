@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="78ce0592-d43f-4b5d-bed4-e78e760a398f" ItemType="Agent" CreatedBy="beniwal" Created="202203030600" GingerVersion="4.1.0.0" Version="1" LastUpdateBy="beniwal" LastUpdate="202203030600" />
+<Agent Active="True" AgentType="Driver" DriverType="PowerBuilder" Guid="78ce0592-d43f-4b5d-bed4-e78e760a398f" Name="PB" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="PowerBuilder">
+<DriverConfiguration>
+<DriverConfigParam Description="Action Timeout - default is 150 seconds" Guid="6a252d3b-e1e4-4405-9ff9-01874c209156" Parameter="ActionTimeout" ParentGuid="00000000-0000-0000-0000-000000000000" Value="150" />
+<DriverConfigParam Description="Amount of time the driver should wait when searching for an element if it is not immediately present" Guid="1115157a-aafc-4820-88ef-3ad120237f5f" Parameter="ImplicitWait" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+<DriverConfigParam Description="The amount of maximum time (in seconds) to wait for the driver to load/connect" Guid="cd7bfbf4-9580-411a-93fe-482a26b2266f" Parameter="DriverLoadWaitingTime" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30" />
+</DriverConfiguration>
+</Agent></GingerRepositoryItem>

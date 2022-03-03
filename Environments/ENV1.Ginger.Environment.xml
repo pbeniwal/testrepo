@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="8301b314-1df7-414a-8b28-e3d7dffe8420" ItemType="ProjEnvironment" CreatedBy="beniwal" Created="202203020854" GingerVersion="4.1.0.0" Version="3" LastUpdateBy="beniwal" LastUpdate="202203030834" />
+<ProjEnvironment Guid="8301b314-1df7-414a-8b28-e3d7dffe8420" Name="ENV1" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Active="True" Guid="702530c2-39d7-44a2-a5c0-dafcb33a4f9e" Name="MyWebApp" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Dbs>
+<Database ConnectionString="Server=localhost;Database=demo;UID=root;PWD=root;SslMode=None" DBType="MySQL" Guid="8addbc60-85fa-4fef-936c-abac59014d60" KeepConnectionOpen="False" Name="MYDB" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Dbs>
+
+<GeneralParams>
+<GeneralParam Guid="805fc4dc-7f7e-4005-9e4c-c2b561666919" Name="URL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://www.google.co.in" />
+</GeneralParams>
+</EnvApplication>
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>

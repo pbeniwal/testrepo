@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="8e870c6f-7513-4e53-8c00-5d114acf60de" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203031032" GingerVersion="4.1.0.0" Version="10" LastUpdateBy="beniwal" LastUpdate="202203031058" />
+<BusinessFlow Elapsed="2741" Guid="8e870c6f-7513-4e53-8c00-5d114acf60de" Name="LoppDemo" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="LoopTest" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="8352cafa-f97a-472b-a303-e8e5c2e73ae0" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="32b90adc-40b0-469e-9c83-c903ee4a3eaf" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BF_ROWNUM" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d36e74be-7ede-44d5-acd2-b998c1dcb6c4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Dummy Action" Guid="1625f1c3-c89a-4f88-8716-f4aa30d309df" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+<ActSetVariableValue Active="True" Description="Increment_Var" Guid="f3a3451b-89b6-400a-a191-f6b4ac6053bf" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BF_ROWNUM" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="2aadd8e3-5a8b-4c8a-8bb2-d53d78947e97" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=BF_ROWNUM}+1}" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Flow Control" Guid="2c83d9f9-7015-41a4-ab6a-11d302135063" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="{CS Exp={Var Name=BF_ROWNUM}&lt;=10}&#xD;&#xA;&#xD;&#xA;" FlowControlAction="GoToAction" Guid="3c5f9848-b976-46a9-9bf2-d808e9eb8485" Operator="CSharp" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1625f1c3-c89a-4f88-8716-f4aa30d309df#GUID_NAME#Dummy Action" />
+<FlowControl BusinessFlowControlAction="GoToBusinessFlow" Condition="{CS Exp={Var Name=BF_ROWNUM}&gt;10}" FlowControlAction="StopBusinessFlow" Guid="ebc13af1-537d-4fdc-b0d2-dd94d98ecea0" Operator="CSharp" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="617e9c58-a86d-45ee-9419-87bb3000a4b1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=BF_ROWNUM}" />
+</InputValues>
+</ActDummy>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="34f7dd32-5d9e-4bd9-a544-0767ef08795a" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8352cafa-f97a-472b-a303-e8e5c2e73ae0" ActivityName="LoopTest" Guid="6542210d-234b-4d3a-9114-34822af96709" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="ac2bd8a6-decb-4f52-b584-edc7152cd0ba" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableNumber Guid="e099050c-cb27-499b-b379-74308ca34cc9" InitialNumberValue="0" MappedOutputType="None" MaxValue="2147483647" MinValue="-2147483648" Name="BF_ROWNUM" ParentGuid="8e870c6f-7513-4e53-8c00-5d114acf60de" ParentName="LoppDemo" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>
