@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020855" GingerVersion="4.1.0.0" Version="63" LastUpdateBy="beniwal" LastUpdate="202203031337" />
+<GingerRepositoryItem><Header ItemGuid="c3a623c7-72ee-4619-9819-1c2298465d5e" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020855" GingerVersion="4.1.0.0" Version="64" LastUpdateBy="beniwal" LastUpdate="202203031630" />
 <BusinessFlow Elapsed="22067" Guid="c3a623c7-72ee-4619-9819-1c2298465d5e" Name="Google Search" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Open Google" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="cf6ea78c-d688-432b-83a5-c27e29038249" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -143,16 +143,18 @@
 </ActExcel>
 </Acts>
 </Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="New Activity" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="0256433f-f807-4e28-b485-1247a3f9e298" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="MyWebApp" />
 </Activities>
 
 <ActivitiesGroups>
 <ActivitiesGroup Guid="94cd9429-8f21-4467-9aa0-26774437e9fb" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ActivityName="Open Google" Guid="f2acb1ba-641e-4a55-8da5-1d0eec89501a" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="ba3bb138-e4d7-454e-a5b5-794a27f8b85e" ActivityName="Search Google" Guid="0a2a701d-4823-469f-a701-b45826fd5c3f" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ActivityName="Close Browser" Guid="d97df876-f9c6-4834-abae-2e1f79f07c28" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d14a0478-b00c-47bd-9675-16ae899085cd" ActivityName="LinuxVa" Guid="ed64129e-a59b-4521-ad05-0e084a3d69c6" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="b0a37b95-6c2d-4955-a72e-02995188a532" ActivityName="WriteData" Guid="2aef05e9-cf00-4346-ba71-3a4b5dce0818" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cf6ea78c-d688-432b-83a5-c27e29038249" ActivityName="Open Google" Guid="a6019f3e-4985-4849-9074-532fe9b9dcd8" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="ba3bb138-e4d7-454e-a5b5-794a27f8b85e" ActivityName="Search Google" Guid="7868fe93-1988-4826-b1e2-ca958fe5367e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d82d96e1-6451-436d-a8d5-e87eaac8f198" ActivityName="Close Browser" Guid="298c2a47-1ac0-45e4-ba97-4f38b0c956c7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d14a0478-b00c-47bd-9675-16ae899085cd" ActivityName="LinuxVa" Guid="f33ceadb-15b3-4e95-b56e-7d0fbdee7c23" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="b0a37b95-6c2d-4955-a72e-02995188a532" ActivityName="WriteData" Guid="15f75a64-a2f8-4e22-b780-8390d2cd51d4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0256433f-f807-4e28-b485-1247a3f9e298" ActivityName="New Activity" Guid="7883542a-1356-40e3-baa4-e66c8e153d7a" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
